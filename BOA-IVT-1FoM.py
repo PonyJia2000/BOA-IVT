@@ -3,15 +3,16 @@
 
 # In[ ]:
 
+import itertools
 import os
 import time
-import itertools
+
+import GPy
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
 from scipy.spatial import distance
 from scipy.stats import norm
-import GPy
+from sklearn.preprocessing import MinMaxScaler
 
 # In[ ]:
 
@@ -24,7 +25,7 @@ os.system('pip install scipy')
 
 # Parameter setting
 BOA = 1  # 1 or 2 (1: early optimization stage, 2: late optimization stage)
-number_of_experiments_per_cycle = 5
+number_of_experiments_per_cycle = 10
 
 # Label in DoE_Exp_Table_IVT_1FoM.xlsx
 output_label = "mRNA-yield"

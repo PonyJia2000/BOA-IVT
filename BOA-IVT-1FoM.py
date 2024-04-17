@@ -25,7 +25,7 @@ os.system('pip install scipy')
 
 # Parameter setting
 BOA = 1  # 1 or 2 (1: early optimization stage, 2: late optimization stage)
-number_of_experiments_per_cycle = 10
+number_of_experiments_per_cycle = 5
 
 # Label in DoE_Exp_Table_IVT_1FoM.xlsx
 output_label = "mRNA-yield"
